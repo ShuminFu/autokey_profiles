@@ -1,0 +1,1 @@
+window.activate("zsh - .cursor-tutor - Cursor")

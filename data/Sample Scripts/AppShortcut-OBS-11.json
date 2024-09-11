@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "v-map",
+    "description": "AppShortcut-OBS-1",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 146,
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -19,9 +19,9 @@
     },
     "hotkey": {
         "modifiers": [
-            "<alt>"
+            "<super>"
         ],
-        "hotKey": "v"
+        "hotKey": "b"
     },
     "filter": {
         "regex": null,

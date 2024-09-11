@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "v-map",
+    "description": "AppShortcut-Pycharm-1",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 146,
+    "usageCount": 68,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -21,7 +21,7 @@
         "modifiers": [
             "<alt>"
         ],
-        "hotKey": "v"
+        "hotKey": "<escape>"
     },
     "filter": {
         "regex": null,
