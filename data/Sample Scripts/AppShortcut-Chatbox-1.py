@@ -10,7 +10,7 @@ def get_window_id_by_class(window_class):
         # 检查窗口类是否匹配
         if window_class in line:
             # 返回窗口ID
-            return line.split()[0]
+            return line.split()[0], line.split()[1]
     return None
 
 def activate_window(window_id):
@@ -23,14 +23,16 @@ def hide_window(window_id):
 
 def start_app():
     # 启动App窗口
-    subprocess.call(["/home/shumin/AppImages/obsidian.appimage", "--no-sandbox"])
+    subprocess.call(["/home/shumin/AppImages/chatbox.appimage", "--no-sandbox"])
 
-window_id = get_window_id_by_class(app)
-
+window_id, desktop_id = get_window_id_by_class(app)
+_, current_desktop_id = get_window_id_by_class(window_class)
 if window_id:    
     if app in window_class:
         hide_window(window_id)
     else:
+        if desktop_id != current_desktop_id:
+            window.move_to_desktop(app, current_desktop_id, matchClass=True)
         activate_window(window_id)
         time.sleep(0.05)
         keyboard.send_keys("<ctrl>+n")
