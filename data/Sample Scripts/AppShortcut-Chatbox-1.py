@@ -11,7 +11,7 @@ def get_window_id_by_class(window_class):
         if window_class in line:
             # 返回窗口ID
             return line.split()[0], line.split()[1]
-    return None
+    return None,None
 
 def activate_window(window_id):
     # 使用xdotool将窗口展示在最前面
@@ -24,7 +24,7 @@ def hide_window(window_id):
 def start_app():
     # 启动App窗口
     subprocess.call(["/home/shumin/AppImages/chatbox.appimage", "--no-sandbox"])
-
+    #subprocess.call(["gtk-launch","/home/shumin/.local/share/applications/chatbox.desktop"])
 window_id, desktop_id = get_window_id_by_class(app)
 _, current_desktop_id = get_window_id_by_class(window_class)
 if window_id:    
@@ -36,6 +36,7 @@ if window_id:
         activate_window(window_id)
         time.sleep(0.05)
         keyboard.send_keys("<ctrl>+n")
+        keyboard.send_keys("<ctrl>+i")
 else:
     start_app()
 

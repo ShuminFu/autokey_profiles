@@ -1,7 +1,7 @@
 import subprocess
 window_title = window.get_active_title()
 window_class = window.get_active_class()
-app = "chatbox"
+app = "superproductivity.superProductivity"
 
 def get_window_id_by_class(window_class):
     # 使用wmctrl获取所有窗口的Noneaa列表
@@ -23,7 +23,7 @@ def hide_window(window_id):
 
 def start_app():
     # 启动App窗口
-    subprocess.call(["/home/shumin/AppImages/chatbox.appimage", "--no-sandbox"])
+    subprocess.call(["superproductivity"])
 
 window_id, desktop_id = get_window_id_by_class(app)
 _, current_desktop_id = get_window_id_by_class(window_class)
@@ -34,6 +34,7 @@ if window_id:
         if desktop_id != current_desktop_id:
             window.move_to_desktop(app, current_desktop_id, matchClass=True)
         activate_window(window_id)
+
 else:
     start_app()
 

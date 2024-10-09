@@ -11,7 +11,7 @@ def get_window_id_by_class(window_class):
         if window_class in line:
             # 返回窗口ID
             return line.split()[0], line.split()[1]
-    return None
+    return None,None
 
 def activate_window(window_id):
     # 使用xdotool将窗口展示在最前面

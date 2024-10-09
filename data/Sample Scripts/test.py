@@ -1,1 +1,1 @@
-window.activate("zsh - .cursor-tutor - Cursor")
+keyboard.send_keys("y")
