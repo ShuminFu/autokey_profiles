@@ -1,0 +1,28 @@
+{
+    "type": "script",
+    "description": "Albert-translate-2English",
+    "store": {},
+    "modes": [],
+    "usageCount": 73,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<shift>"
+        ],
+        "hotKey": "."
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}
