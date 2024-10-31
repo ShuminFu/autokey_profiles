@@ -8,14 +8,12 @@
     "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
-        "abbreviations": [
-            "qq"
-        ],
+        "abbreviations": [],
         "backspace": true,
         "ignoreCase": false,
-        "immediate": true,
+        "immediate": false,
         "triggerInside": false,
-        "wordChars": "[^\\t]"
+        "wordChars": "[\\w]"
     },
     "hotkey": {
         "modifiers": [],
